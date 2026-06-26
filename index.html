@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yo Te Cuido | Cuidado profesional en Tulancingo</title>
+    <!-- TailwindCSS vía CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* Fondo suave y degradado sutil para darle calidez médica */
+        .bg-gradient-custom {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 100%);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebe5c;
+            transform: scale(1.02);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== NAVEGACIÓN (Sutil, sin nombre personal) ==================== -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-light text-teal-700">??</span>
+                <span class="text-xl font-bold text-gray-800 tracking-tight">Yo Te <span class="text-teal-600">Cuido</span></span>
+            </div>
+            <div class="text-sm text-gray-500 hidden sm:block">
+                <i class="fas fa-map-pin text-teal-500 mr-1"></i> Tulancingo, Hgo.
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO (Portada principal) ==================== -->
+    <section class="bg-gradient-custom py-16 md:py-24 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block bg-teal-100 text-teal-800 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm border border-teal-200/50">
+                <i class="fas fa-shield-alt mr-1"></i> Profesionales verificados
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+                Cuidado profesional para <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">quien más quieres</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                En <strong>Yo Te Cuido</strong> conectamos a familias de Tulancingo con enfermeras, 
+                fisioterapeutas y psicólogos verificados. Tú nos cuentas tu caso, nosotros te asignamos 
+                al profesional ideal para tu hogar.
+            </p>
+            <!-- BOTÓN DE ACCIÓN PRINCIPAL (WhatsApp del alter ego) -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/5215564721564?text=Hola%20Yo%20Te%20Cuido%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20enfermer%C3%ADa" 
+                   target="_blank" 
+                   class="btn-whatsapp text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg flex items-center gap-3 w-full sm:w-auto justify-center">
+                    <i class="fab fa-whatsapp text-xl"></i> Solicitar cotización
+                </a>
+                <span class="text-sm text-gray-400 hidden sm:block">o</span>
+                <a href="#como-funciona" class="text-teal-700 font-medium hover:text-teal-900 underline-offset-4 underline">
+                    ¿Cómo funciona?
+                </a>
+            </div>
+            <p class="text-xs text-gray-400 mt-4">
+                <i class="fas fa-lock mr-1"></i> Sin compromiso · Respuesta en menos de 2 horas
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== CÓMO FUNCIONA ==================== -->
+    <section id="como-funciona" class="py-16 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">¿Cómo trabajamos?</h2>
+        <p class="text-center text-gray-500 mb-12 max-w-xl mx-auto">Tres pasos para tener tranquilidad en tu hogar</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Paso 1 -->
+            <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 text-center hover:border-teal-200 transition-all">
+                <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-5 text-2xl text-teal-600">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">1. Cuéntanos tu caso</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Describe el estado de tu familiar (movilidad, alimentación, medicación) y 
+                    el tipo de cuidado que necesita. Nosotros evaluamos tu solicitud.
+                </p>
+            </div>
+            <!-- Paso 2 -->
+            <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 text-center hover:border-teal-200 transition-all">
+                <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-5 text-2xl text-teal-600">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">2. Te asignamos al profesional</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Nuestro equipo selecciona a la enfermera o terapeuta con la experiencia 
+                    exacta que necesita tu familiar, basado en horarios y ubicación.
+                </p>
+            </div>
+            <!-- Paso 3 -->
+            <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 text-center hover:border-teal-200 transition-all">
+                <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-5 text-2xl text-teal-600">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">3. Confirmas y recibes atención</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Aceptas el presupuesto, realizas el pago y la profesional llega a tu domicilio 
+                    en el horario acordado con todos los implementos necesarios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section class="bg-gray-50 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Nuestros servicios</h2>
+            <p class="text-center text-gray-500 mb-12">Atención especializada en la comodidad de tu hogar</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-teal-500 hover:shadow-md transition-all">
+                    <div class="text-3xl mb-3">??</div>
+                    <h3 class="text-xl font-bold text-gray-800">Enfermería a domicilio</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Cuidado de adultos mayores, pacientes terminales y personas con discapacidad motriz. 
+                        Turnos de 8 horas continuas.
+                    </p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-cyan-500 hover:shadow-md transition-all">
+                    <div class="text-3xl mb-3">??</div>
+                    <h3 class="text-xl font-bold text-gray-800">Fisioterapia a domicilio</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Rehabilitación física y terapia de movilidad en tu hogar. Ayudamos a recuperar 
+                        la independencia del paciente.
+                    </p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-400 hover:shadow-md transition-all">
+                    <div class="text-3xl mb-3">??</div>
+                    <h3 class="text-xl font-bold text-gray-800">Psicología en línea</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Acompañamiento emocional y apoyo psicológico desde la distancia, 
+                        para el paciente y la familia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PLAN DE CUIDADO CONTINUO (PRECIO CLAVE) ==================== -->
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-teal-50 to-white rounded-3xl p-8 md:p-12 border border-teal-100 shadow-xl text-center">
+            <span class="text-xs font-semibold uppercase tracking-wider bg-teal-200 text-teal-800 px-4 py-1.5 rounded-full inline-block mb-4">
+                <i class="fas fa-star mr-1"></i> Más contratado
+            </span>
+            <h2 class="text-3xl font-extrabold text-gray-800">?? Plan Esencial <span class="text-teal-600">"Cuidado Continuo"</span></h2>
+            <p class="text-gray-500 mt-2 max-w-xl mx-auto">
+                Ideal para pacientes crónicos que necesitan atención constante y confiable.
+            </p>
+            <div class="mt-6 bg-white p-6 rounded-2xl shadow-inner inline-block w-full md:w-auto">
+                <span class="text-5xl font-black text-teal-700">$600</span>
+                <span class="text-gray-400 font-medium"> MXN</span>
+                <span class="text-sm text-gray-400 block">por turno de <strong class="text-gray-700">8 horas</strong></span>
+            </div>
+            <div class="mt-6 space-y-3 text-left max-w-sm mx-auto text-gray-600">
+                <div class="flex items-start gap-3 bg-white/70 p-3 rounded-lg">
+                    <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                    <span>Enfermera titulada con experiencia comprobada.</span>
+                </div>
+                <div class="flex items-start gap-3 bg-white/70 p-3 rounded-lg">
+                    <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                    <span>Continuidad en el cuidado (misma enfermera o equipo rotativo).</span>
+                </div>
+                <div class="flex items-start gap-3 bg-white/70 p-3 rounded-lg">
+                    <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                    <span><span class="font-semibold">Traslado:</span> Se cotiza por separado con la enfermera asignada.</span>
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="https://wa.me/5215564721564?text=Hola%20Yo%20Te%20Cuido%2C%20quiero%20contratar%20el%20plan%20de%20cuidado%20continuo%20de%208%20horas" 
+                   target="_blank" 
+                   class="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-full text-lg inline-flex items-center gap-3 transition-all shadow-lg">
+                    <i class="fab fa-whatsapp text-green-400"></i> Contratar este plan
+                </a>
+            </div>
+            <p class="text-xs text-gray-400 mt-4">
+                <i class="fas fa-credit-card mr-1"></i> Pagos seguros por transferencia/SPEI. Precio de lanzamiento.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-4 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">??</span>
+                <span class="text-white font-bold text-lg">Yo Te <span class="text-teal-400">Cuido</span></span>
+                <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full hidden sm:inline">Beta</span>
+            </div>
+            <div class="text-sm text-center md:text-left">
+                <p>?? Tulancingo de Bravo, Hidalgo</p>
+                <p class="text-xs text-gray-500 mt-1">© 2026 Yo Te Cuido. Tu tranquilidad es nuestro compromiso.</p>
+            </div>
+            <div class="flex gap-4 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Aviso de Privacidad</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://wa.me/5215564721564" target="_blank" class="hover:text-white transition-colors">
+                    <i class="fab fa-whatsapp"></i> Contacto
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
